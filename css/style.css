@@ -1,0 +1,90 @@
+:root {
+  --color-dark-blue: #264653;
+  --color-blue: #63B6C7;
+  --color-white :#fff;
+}
+@font-face {
+    font-family: 'Unna bold';
+    font-weight: 700;
+    src: url('../fonts/Unna-bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Unna regular';
+    font-weight: 400;
+    src: url('../fonts/Unna-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Open sans regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Open sans regular', sans-serif;
+}
+
+.container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    -webkit-flex: auto;
+	flex: auto;
+}
+.background-cross{
+    background-color: #ffffff;
+    background-image: url('../images/cross.svg');
+    height: 514px;
+    width: 520px;
+}
+.title, .subtitle, .paragraph{
+    color: var(--color-dark-blue);
+}
+.title{
+    font-family: 'Unna bold', serif;
+    font-size: 60px;
+}
+.subtitle{
+    font-family: 'Unna regular', serif;
+    font-size: 30px;
+}
+.paragraph{
+    font-family: 'Open sans regular', sans-serif;
+    font-size: 18px;
+}
+
+.text-center{
+    text-align: center;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.btn{
+    padding:10px;
+    border: 0;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 15px;
+}
+.footer{
+    padding: 50px;
+}
+.footer h4{
+    color: var(--color-dark-blue);
+}
+.footer span{
+    color: var(--color-dark-blue);
+}
