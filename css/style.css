@@ -44,8 +44,8 @@
 .background-cross{
     background-color: #ffffff;
     background-image: url('../images/cross.svg');
-    padding-right: 55rem;
-    padding-bottom: 40rem;
+    padding-right: 50rem;
+    padding-bottom: 35rem;
 }
 .title, .subtitle, .paragraph{
     color: var(--color-dark-blue);
