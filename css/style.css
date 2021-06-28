@@ -27,15 +27,15 @@
 }
 
 .container{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
+	display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     margin: auto;
-    width: 80%;
+    width: 70%;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 .item{
     -webkit-flex: auto;
@@ -44,8 +44,8 @@
 .background-cross{
     background-color: #ffffff;
     background-image: url('../images/cross.svg');
-    height: 514px;
-    width: 520px;
+    padding-right: 55rem;
+    padding-bottom: 40rem;
 }
 .title, .subtitle, .paragraph{
     color: var(--color-dark-blue);
@@ -88,4 +88,13 @@
 .footer span{
     color: var(--color-dark-blue);
 }
-/****MEDIA QUERY**/
+
+@media only screen and (max-width: 600px) {
+    .img{
+        height: 255px;
+    }
+    .background-cross{
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+}
